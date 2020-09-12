@@ -16,7 +16,7 @@ const UserDetails = (props) => {
         </Card.Header>
         <Card.Body>
           <Card.Title># {props.user.nickname}</Card.Title>
-          <Card.Text>
+          <Card.Text style={{ height: '50px' }}>
             {props.user.text}
           </Card.Text>
           <Card.Text className="user-card-info">

@@ -4,7 +4,7 @@ const initialState = {
       id: '1',
       nickname: 'Yoshi Manga',
       avatar: 'Batman',
-      text: 'Some quick example text to build',
+      text: 'Some quick example text to build, Some quick example text to build',
       date: '12-09-2010'
     },
     {
