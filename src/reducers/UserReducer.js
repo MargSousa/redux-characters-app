@@ -1,21 +1,21 @@
 const initialState = {
   users: [
     {
-      id: 1,
+      id: '1',
       nickname: 'Yoshi Manga',
       avatar: 'Batman',
       text: 'Some quick example text to build',
       date: '12-09-2010'
     },
     {
-      id: 2,
+      id: '2',
       nickname: 'Gabba Bucho',
       avatar: 'Zombie',
       text: 'Some quick example text to build',
       date: '10-09-2010'
     },
     {
-      id: 3,
+      id: '3',
       nickname: 'Mexican Fighter',
       avatar: 'Fighter',
       text: 'Some quick example text to build',
@@ -27,11 +27,9 @@ const initialState = {
 const UserReducer = (state = initialState, action) => {
   switch(action.type) {
     case 'DELETE_USER':
-      console.log("reducer delete", action.id)
-      let newUsers = state.users.filter( user => user.id !== action.id);
-      console.log(newUsers);
+      let newUsers = state.users.filter(user => user.id !== action.id );
       return {
-        ...state, 
+        ...state,
         users: newUsers
       }
     default:
