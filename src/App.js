@@ -9,7 +9,7 @@ function App() {
       <div className="App">
         <Link to="/">
           <div className="app-title">
-            Redux Exercise - Characters App
+            React Redux Exercise - Characters App
           </div>
           <div className="app-subtitle">
             Create and add new characters to the list or delete the ones you don't want.
@@ -21,7 +21,10 @@ function App() {
         </Switch>
 
         <div className="footer">
-          Margarida Sousa - 2020
+          2020 - {' '}
+          <a href="https://github.com/MargSousa/redux-characters-app" >
+            Margarida Sousa - Github
+          </a>
         </div>
       </div>
     </Router>

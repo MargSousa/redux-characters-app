@@ -20,7 +20,7 @@ const UserDetails = (props) => {
             {props.user.description}
           </Card.Text>
           <Card.Text className="user-card-info">
-            <div>Joined in {props.user.date}</div>
+            <div>Added in {props.user.date}</div>
             <div>
               <button id={props.user.id} className="delete-user-icon" onClick={handleDelete} />
             </div>
