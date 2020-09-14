@@ -10,19 +10,19 @@ const UserDetails = (props) => {
 
   return (
     <div className="UserDetails">
-      <Card border="dark" style={{ width: '18rem' }} className="user-card">
+      <Card border="dark" className="user-card">
         <Card.Header>
-          <Card.Img variant="left" className="user-avatar" src={`${window.location.origin}/images/avatars/${props.user.avatar}.png`} />
+          <Card.Img variant="left" className="user-avatar" src={`${window.location.origin}${props.user.avatar}`} />
         </Card.Header>
         <Card.Body>
           <Card.Title># {props.user.nickname}</Card.Title>
           <Card.Text style={{ height: '50px' }}>
-            {props.user.text}
+            {props.user.description}
           </Card.Text>
           <Card.Text className="user-card-info">
             <div>Joined in {props.user.date}</div>
             <div>
-              <button id={props.user.id} className="user-delete-icon" onClick={handleDelete} />
+              <button id={props.user.id} className="delete-user-icon" onClick={handleDelete} />
             </div>
           </Card.Text>
         </Card.Body>

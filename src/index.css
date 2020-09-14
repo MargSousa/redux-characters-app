@@ -9,26 +9,37 @@ body {
   flex-direction: column;
 }
 
+.App a {
+  text-decoration: none !important;
+}
 
 .app-title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   color: white;
   background-color: #303F9F;
-  padding: 20px 0px 20px 40px;
+  padding: 20px 0px 5px 40px;
+}
+
+.app-subtitle {
+  font-size: 16px;
+  color: white;
+  background-color: #303F9F;
+  padding: 0px 0px 20px 40px;
+}
+
+
+.UserList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px;
 }
 
 .user-list-title {
   text-align: center;
   font-weight: bold;
   font-size: 24px;
-}
-
-.UserList {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 30px 0px;
 }
 
 .user-list-content {
@@ -40,6 +51,7 @@ body {
 
 .user-card {
   margin: 20px;
+  width: 17rem;
 }
 
 .user-avatar {
@@ -55,7 +67,7 @@ body {
   align-items: center;
 }
 
-.user-delete-icon {
+.delete-user-icon {
   background-image: url('./images/deleteGrey.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -66,8 +78,68 @@ body {
   background-color: white;
 }
 
-.user-delete-icon:hover {
+.delete-user-icon:hover {
   background-image: url('./images/deleteRed.png');
+}
+
+.UserDetails a {
+  text-decoration: none;
+  color: black;
+}
+
+.UserAddNew {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.new-user-title {
+  width: 25rem;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.edit-avatar-icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 38px;
+  top: 32px;
+}
+
+.edit-avatar-popover {
+  width: 70px;
+  cursor: pointer;
+}
+
+.new-avatar {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.new-avatar:hover {
+  border: 2px solid rgb(255, 89, 0);
+  border-radius: 50px;
+}
+
+.create-button-section {
+  text-align: center;
+}
+
+.create-button {
+  margin: 10px 0px;
+}
+
+.error {
+  font-size: 10px;
+  color: red;
+}
+.error-margin {
+  margin: 5px 0px -5px 0px !important;
 }
 
 .footer {
@@ -85,8 +157,13 @@ body {
   .app-title {
     font-size: 20px;
     text-align: center;
-    padding: 20px 0px;
-  } 
+    padding: 20px 0px 5px 0px;
+  }
+  .app-subtitle {
+    font-size: 14px;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+  }
   .footer {
     position: relative;
   }

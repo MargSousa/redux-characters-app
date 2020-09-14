@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import UserDetails from './UserDetails';
-import UserNew from '../components/UserNew'
+import UserNewCard from './UserNewCard'
 
 const UserList = (props) => {
 
@@ -15,10 +15,12 @@ const UserList = (props) => {
             { userList.map((user) =>
               <UserDetails key={user.id} user={user} />
             )}
-            <UserNew />
+            <UserNewCard />
           </div>)
         : 
-          (<div className="user-list-content">No users registered...</div>)
+          (<div className="user-list-content">
+            <UserNewCard />
+          </div>)
         }
       </div>
     </div>
